@@ -77,10 +77,10 @@ const uploadNotes = () => {
         let note = document.createElement('article')
         note.classList = 'note'
         note.innerHTML = `<h2>${titulo}</h2>
-                          <div>${contenido}</div>
+                          <p>${contenido}</p>
                           <div class="botonesCambios">
-                          <button id="eliminar${id}" class="botonDelete"><img src="/img/goma-de-borrar.png" class="icon"></button>
-                          <button id="modificar${id}" class="botonModificar"><img src="/img/nota-adhesiva.png" class="icon"></button>
+                          <button id="eliminar${id}" class="botonDelete"><img src="img/goma-de-borrar.png" class="icon"></button>
+                          <button id="modificar${id}" class="botonModificar"><img src="img/nota-adhesiva.png" class="icon"></button>
                           </div>
                           <span>${dia}/${mes} - ${hora}:${min}</span>`
         conteiner__notes.appendChild(note)
